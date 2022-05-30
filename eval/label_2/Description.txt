@@ -1,0 +1,24 @@
+Nums value      Name                Description
+    1           type            Describes the type of object: 'Car', 'Van', 'Truck',
+                                'Pedestrian', 'Person_sitting', 'Cyclist', 'Tram',
+                                'Misc' or 'DontCare'
+
+    1           truncated       0-1, đề cập đến đối tượng rời khỏi ranh giới hình ảnh
+
+    1           occluded        Integer (0,1,2,3)
+                                0 = hiển thị hoàn toàn
+                                1 = bị tắc một phần
+                                2 = bị tắc phần lớn
+                                3 = không xác định
+
+    1           alpha           Góc quan sát của đối tượng, phạm vi [-pi..pi]
+
+    4           bbox            Hộp giới hạn 2D của đối tượng trong hình ảnh : chứa tọa độ pixel trái trên, phải dưới
+
+    3           dimensions      Kích thước vật thể 3D: chiều cao, chiều rộng, chiều dài (tính bằng mét)
+
+    3           location        Vị trí đối tượng 3D x, y, z trong tọa độ máy ảnh (tính bằng mét)
+
+    1           rotation_y      Xoay ry quanh trục Y trong tọa độ máy ảnh [-pi..pi]
+
+    1           score           Chỉ dành cho kết quả: Float, cho biết độ tin cậy trong phát hiện, cần thiết cho đường cong p / r, càng cao càng tốt.
